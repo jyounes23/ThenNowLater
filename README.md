@@ -83,7 +83,7 @@ http://127.0.0.1:5000/
 
 
 
-Usage
+## Usage
 	•	Add Tasks:
 Use the form at the bottom of the page to add new tasks. Choose the appropriate category (Then, Now, or Later) for each task.
 	•	Update Tasks:
@@ -91,7 +91,7 @@ Mark tasks as completed by clicking the checkbox next to each task.
 	•	Delete Tasks:
 Remove tasks by clicking the delete button associated with each task.
 
-Customization
+## Customization
 	•	Styling:
 The custom CSS file (static/style.css) contains all the styling rules. You can adjust colors, fonts, animations, and textures to further tailor the look and feel to your liking.
 	•	Fonts & Colors:
@@ -99,7 +99,7 @@ The design uses Google Fonts for a futuristic look. Modify the @import URLs or C
 	•	Additional Features:
 Enhance the app by integrating new features such as user authentication, drag-and-drop task ordering, or real-time notifications.
 
-Contributing
+## Contributing
 
 Contributions are welcome! If you’d like to enhance it, please follow these steps:
 	1.	Fork the repository.
@@ -108,11 +108,11 @@ Contributions are welcome! If you’d like to enhance it, please follow these st
 	4.	Push to the branch (git push origin feature/your-feature).
 	5.	Open a Pull Request.
 
-License
+## License
 
 This project is licensed under the MIT License.
 
-Acknowledgments
+## Acknowledgments
 	•	Design Inspiration:
 Inspired by Iron Man’s high-tech workshop.
 	•	Bootstrap & Google Fonts:
