@@ -82,46 +82,45 @@ python app.py
 http://127.0.0.1:5000/
 
 
-
 ## Usage
-	•	Add Tasks:
-Use the form at the bottom of the page to add new tasks. Choose the appropriate category (Then, Now, or Later) for each task.
-	•	Update Tasks:
-Mark tasks as completed by clicking the checkbox next to each task.
-	•	Delete Tasks:
-Remove tasks by clicking the delete button associated with each task.
+
+- **Add Tasks:**  
+  Use the form at the bottom of the page to add new tasks. Choose the appropriate category (Then, Now, or Later) for each task.
+
+- **Update Tasks:**  
+  Mark tasks as completed by clicking the checkbox next to each task.
+
+- **Delete Tasks:**  
+  Remove tasks by clicking the delete button associated with each task.
 
 ## Customization
-	•	Styling:
-The custom CSS file (static/style.css) contains all the styling rules. You can adjust colors, fonts, animations, and textures to further tailor the look and feel to your liking.
-	•	Fonts & Colors:
-The design uses Google Fonts for a futuristic look. Modify the @import URLs or CSS rules to experiment with different fonts or color schemes.
-	•	Additional Features:
-Enhance the app by integrating new features such as user authentication, drag-and-drop task ordering, or real-time notifications.
+
+- **Styling:**  
+  The custom CSS file (`static/style.css`) contains all the styling rules. You can adjust colors, fonts, animations, and textures to further tailor the look and feel to your liking.
+
+- **Fonts & Colors:**  
+  The design uses Google Fonts for a futuristic look. Modify the `@import` URLs or CSS rules to experiment with different fonts or color schemes.
+
+- **Additional Features:**  
+  Enhance the app by integrating new features such as user authentication, drag-and-drop task ordering, or real-time notifications.
 
 ## Contributing
 
-Contributions are welcome! If you’d like to enhance it, please follow these steps:
-	1.	Fork the repository.
-	2.	Create a new branch (git checkout -b feature/your-feature).
-	3.	Commit your changes (git commit -m 'Add some feature').
-	4.	Push to the branch (git push origin feature/your-feature).
-	5.	Open a Pull Request.
+Contributions are welcome! If you’d like to enhance the project, please do so!
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License. 
 
-## Acknowledgments
-	•	Design Inspiration:
-Inspired by Iron Man’s high-tech workshop.
-	•	Bootstrap & Google Fonts:
-For making it easy to build responsive, modern designs.
-	•	Community Contributions:
-Thanks to all the developers and designers whose work helped inspire this project.
+## Acknowledgements
 
-⸻
+- **Design Inspiration:**  
+  Inspired by Iron Man’s high-tech workshop.
+
+- **Bootstrap & Google Fonts:**  
+  For making it easy to build responsive, modern designs.
+
+
+-----------------
 
 Enjoy managing your tasks!
-
----
