@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Then, Now, Later List</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+  <header>
+    <h1>Then, Now, Later List</h1>
+  </header>
+
+  <main>
+    <section class="task-column" id="then">
+      <h2>Then</h2>
+      <ul>
+        {% for task in then_tasks %}
+          <li>
+            <form class="status-form" action="{{ url_for('update_task', task_id=task.id) }}" method="post">
+              <input type="checkbox" name="status" onchange="this.form.submit()" {% if task.status %} checked {% endif %}>
+              <span class="{% if task.status %}completed{% endif %}">{{ task.description }}</span>
+            </form>
+            <form class="delete-form" action="{{ url_for('delete_task', task_id=task.id) }}" method="post">
+              <button type="submit">Delete</button>
+            </form>
+          </li>
+        {% else %}
+          <li>No tasks yet</li>
+        {% endfor %}
+      </ul>
+    </section>
+
+    <section class="task-column" id="now">
+      <h2>Now</h2>
+      <ul>
+        {% for task in now_tasks %}
+          <li>
+            <form class="status-form" action="{{ url_for('update_task', task_id=task.id) }}" method="post">
+              <input type="checkbox" name="status" onchange="this.form.submit()" {% if task.status %} checked {% endif %}>
+              <span class="{% if task.status %}completed{% endif %}">{{ task.description }}</span>
+            </form>
+            <form class="delete-form" action="{{ url_for('delete_task', task_id=task.id) }}" method="post">
+              <button type="submit">Delete</button>
+            </form>
+          </li>
+        {% else %}
+          <li>No tasks yet</li>
+        {% endfor %}
+      </ul>
+    </section>
+
+    <section class="task-column" id="later">
+      <h2>Later</h2>
+      <ul>
+        {% for task in later_tasks %}
+          <li>
+            <form class="status-form" action="{{ url_for('update_task', task_id=task.id) }}" method="post">
+              <input type="checkbox" name="status" onchange="this.form.submit()" {% if task.status %} checked {% endif %}>
+              <span class="{% if task.status %}completed{% endif %}">{{ task.description }}</span>
+            </form>
+            <form class="delete-form" action="{{ url_for('delete_task', task_id=task.id) }}" method="post">
+              <button type="submit">Delete</button>
+            </form>
+          </li>
+        {% else %}
+          <li>No tasks yet</li>
+        {% endfor %}
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <h2>Add a New Task</h2>
+    <form id="addTaskForm" action="{{ url_for('add_task') }}" method="post">
+      <input type="text" name="description" placeholder="Task description" required />
+      <select name="category" required>
+        <option value="">Select Category</option>
+        <option value="Then">Then</option>
+        <option value="Now">Now</option>
+        <option value="Later">Later</option>
+      </select>
+      <button type="submit">Add Task</button>
+    </form>
+  </footer>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
